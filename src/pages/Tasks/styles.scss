@@ -1,0 +1,33 @@
+@import "../../themes/colors";
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  @media (max-width: 512px) {
+    justify-content: flex-start;
+  }
+
+  span {
+    font-weight: 500;
+    margin-right: 5px;
+    @media (max-width: 512px) {
+      font-size: 12px;
+    }
+  }
+
+  select {
+    border-radius: 5px;
+    border: 1px solid $background;
+  }
+}
+
+.pendente {
+  background-color: lighten($warning, 45%);
+  color: $warning;
+}
+
+.concluida {
+  background-color: lighten($success, 68%);
+  color: $success;
+}

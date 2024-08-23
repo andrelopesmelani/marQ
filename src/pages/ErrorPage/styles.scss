@@ -1,0 +1,16 @@
+@import '../../themes/colors';
+
+.errorPageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100dvh;
+
+  h1 {
+    margin: 0;
+  }
+  p {
+    color: $text200;
+  }
+}

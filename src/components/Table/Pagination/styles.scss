@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+
+  .itemsPerPage {
+    margin-right: 30px;
+    span {
+      font-weight: 300;
+      font-size: 14px;
+      @media (max-width: 512px) {
+        display: none;
+      }
+    }
+
+    select {
+      border: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .pageInfo {
+    margin-right: 30px;
+    font-size: 14px;
+  }
+
+  .buttonContainer {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}

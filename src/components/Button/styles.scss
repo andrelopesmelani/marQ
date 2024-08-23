@@ -1,0 +1,26 @@
+@import "../../themes/colors";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  background-color: $button;
+  font-size: 14px;
+  font-weight: 600;
+  color: $white;
+  padding: 10px 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($button, 5%);
+  }
+
+  svg {
+    margin-right: 10px;
+    font-size: 14px;
+    color: $white;
+  }
+}

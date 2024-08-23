@@ -1,0 +1,49 @@
+@import "../../themes/colors";
+
+.sidebar {
+  width: 200px;
+  margin-top: 50px;
+  background-color: $primary;
+  position: fixed;
+  height: 100%;
+  padding: 0 20px;
+  left: -100%;
+  transition: all 0.5s;
+
+  &.active {
+    left: 0;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    left: 0;
+    transform: translateX(-100%);
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      margin: 10px 0;
+
+      a {
+        color: #eaecef;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        padding: 10px 15px;
+        border-radius: 6px;
+
+        &:hover,
+        &.active {
+          background-color: $secondary;
+        }
+      }
+    }
+  }
+}
